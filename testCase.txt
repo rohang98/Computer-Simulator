@@ -1,0 +1,7 @@
+	SUBi	R1,	50,	R3
+	JGZ	R3,	[loop_end]
+	ADD	R1,	R2,	R2
+	JMP	[1stLoop]
+loop_end:
+	SD	R2,	2000
+end.program:
